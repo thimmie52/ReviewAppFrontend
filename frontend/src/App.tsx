@@ -135,8 +135,7 @@ function App() {
           <Leaderboard 
             apps={leaderboardData} 
             onBack={goHome} 
-            onSelect={(appName) => {
-              setCurrentView('hero');
+            onSelect={() => { setCurrentView('hero');
               // Logic could be added here to auto-select appName in Hero selects
             }}
           />

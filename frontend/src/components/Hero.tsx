@@ -10,7 +10,7 @@ interface HeroProps {
 }
 
 // 2. Add it to the destructured props in the component
-const Hero: React.FC<HeroProps> = ({ appList, onCompare, isLoading, onShowLeaderboard }) => {
+const Hero: React.FC<HeroProps> = ({ appList, onCompare, isLoading, onShowLeaderboard: _onShowLeaderboard }) => {
   const [a, setA] = useState('')
   const [b, setB] = useState('')
 
